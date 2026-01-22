@@ -1,0 +1,73 @@
+{
+  "model_type": "RandomForestClassifier",
+  "n_estimators": 100,
+  "max_depth": 15,
+  "train_samples": 40000,
+  "test_samples": 10000,
+  "fraud_samples": 10000,
+  "normal_samples": 40000,
+  "features": [
+    "amount",
+    "merchant_category_encoded",
+    "location_encoded",
+    "hour_of_day",
+    "day_of_week"
+  ],
+  "train_accuracy": 1.0,
+  "test_accuracy": 1.0,
+  "auc_roc": 0.9999999999999999,
+  "feature_importance": [
+    {
+      "feature": "amount",
+      "importance": 0.6911236021503748
+    },
+    {
+      "feature": "hour_of_day",
+      "importance": 0.1842059606909274
+    },
+    {
+      "feature": "location_encoded",
+      "importance": 0.1074629446399872
+    },
+    {
+      "feature": "merchant_category_encoded",
+      "importance": 0.017166433457504002
+    },
+    {
+      "feature": "day_of_week",
+      "importance": 4.1059061206558845e-05
+    }
+  ],
+  "created_at": "2026-01-21T14:58:03.791780",
+  "categories": [
+    "Clothing",
+    "Cryptocurrency",
+    "Electronics",
+    "Entertainment",
+    "Food & Beverage",
+    "Fuel",
+    "Gambling",
+    "Groceries",
+    "Health",
+    "Jewelry",
+    "Travel",
+    "Utilities"
+  ],
+  "locations": [
+    "Dubai, UAE",
+    "Hong Kong",
+    "Las Vegas, USA",
+    "London, UK",
+    "Lyon, France",
+    "Marseille, France",
+    "Nice, France",
+    "Nigeria",
+    "Online",
+    "Paris, France",
+    "Russia",
+    "Toulouse, France"
+  ],
+  "dataset_file": "sample_transactions.csv",
+  "dataset_size": 50000,
+  "fraud_rate": 0.2
+}
