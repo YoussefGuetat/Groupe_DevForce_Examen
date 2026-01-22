@@ -1,0 +1,868 @@
+{
+  "info": {
+    "_postman_id": "09e21c14-779b-4071-9cec-a4ed11802d96",
+    "name": "DigitalBank API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "15720063"
+  },
+  "item": [
+    {
+      "name": "Admin_Token",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"admin@digitalbank.fr\",\r\n    \"password\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/auth/v1/token?grant_type=password",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "auth",
+            "v1",
+            "token"
+          ],
+          "query": [
+            {
+              "key": "grant_type",
+              "value": "password"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Admin_UPDATE_Allowed",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"admin@digitalbank.fr\",\r\n    \"password\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/auth/v1/token?grant_type=password",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "auth",
+            "v1",
+            "token"
+          ],
+          "query": [
+            {
+              "key": "grant_type",
+              "value": "password"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Customer Service - Update statut compte",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"admin@digitalbank.fr\",\r\n    \"password\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/auth/v1/token?grant_type=password",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "auth",
+            "v1",
+            "token"
+          ],
+          "query": [
+            {
+              "key": "grant_type",
+              "value": "password"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Client_Token",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"admin@digitalbank.fr\",\r\n    \"password\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/auth/v1/token?grant_type=password",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "auth",
+            "v1",
+            "token"
+          ],
+          "query": [
+            {
+              "key": "grant_type",
+              "value": "password"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Client2_Token",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"admin@digitalbank.fr\",\r\n    \"password\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/auth/v1/token?grant_type=password",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "auth",
+            "v1",
+            "token"
+          ],
+          "query": [
+            {
+              "key": "grant_type",
+              "value": "password"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Analyst_Token",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"admin@digitalbank.fr\",\r\n    \"password\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/auth/v1/token?grant_type=password",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "auth",
+            "v1",
+            "token"
+          ],
+          "query": [
+            {
+              "key": "grant_type",
+              "value": "password"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Customer Service _Block_Card",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"admin@digitalbank.fr\",\r\n    \"password\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/auth/v1/token?grant_type=password",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "auth",
+            "v1",
+            "token"
+          ],
+          "query": [
+            {
+              "key": "grant_type",
+              "value": "password"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Customer Service _Token",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"admin@digitalbank.fr\",\r\n    \"password\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/auth/v1/token?grant_type=password",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "auth",
+            "v1",
+            "token"
+          ],
+          "query": [
+            {
+              "key": "grant_type",
+              "value": "password"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Admin_Access-All-Accounts",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImY4MmUwYzcxLWQwMGEtNDlmOC04MTQ0LWM3YmM4OGI5YjYzNSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3R6b2lwbnVodXJycnF3Z2hqcHVzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5ZTUyNjYzZS1lODU5LTQ4MTAtOTRjZS0yMzY4MGU3MjEyMGYiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MDAxNzcwLCJpYXQiOjE3Njg5OTgxNzAsImVtYWlsIjoiYWRtaW5AZGlnaXRhbGJhbmsuZnIiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2ODk5ODE3MH1dLCJzZXNzaW9uX2lkIjoiZGQ5MGNjODQtNWZlOC00NWZjLTgxZTEtZDNkZWJkMzYwZGI2IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.gM6MLtsb6fCbmq0MKoaVPgk349jiajRGknlxPJe2zBD4Tf6u5IDCyGg0KI7IXWX-RjHLfWT7gzFxS4-gM_YqHA",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/rest/v1/accounts",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "accounts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Customer Service_Access-All-Accounts",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImY4MmUwYzcxLWQwMGEtNDlmOC04MTQ0LWM3YmM4OGI5YjYzNSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3R6b2lwbnVodXJycnF3Z2hqcHVzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5ZTUyNjYzZS1lODU5LTQ4MTAtOTRjZS0yMzY4MGU3MjEyMGYiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MDAxNzcwLCJpYXQiOjE3Njg5OTgxNzAsImVtYWlsIjoiYWRtaW5AZGlnaXRhbGJhbmsuZnIiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2ODk5ODE3MH1dLCJzZXNzaW9uX2lkIjoiZGQ5MGNjODQtNWZlOC00NWZjLTgxZTEtZDNkZWJkMzYwZGI2IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.gM6MLtsb6fCbmq0MKoaVPgk349jiajRGknlxPJe2zBD4Tf6u5IDCyGg0KI7IXWX-RjHLfWT7gzFxS4-gM_YqHA",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/rest/v1/accounts",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "accounts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Admin_Access-All-Transactions",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImY4MmUwYzcxLWQwMGEtNDlmOC04MTQ0LWM3YmM4OGI5YjYzNSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3R6b2lwbnVodXJycnF3Z2hqcHVzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5ZTUyNjYzZS1lODU5LTQ4MTAtOTRjZS0yMzY4MGU3MjEyMGYiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MDAxNzcwLCJpYXQiOjE3Njg5OTgxNzAsImVtYWlsIjoiYWRtaW5AZGlnaXRhbGJhbmsuZnIiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2ODk5ODE3MH1dLCJzZXNzaW9uX2lkIjoiZGQ5MGNjODQtNWZlOC00NWZjLTgxZTEtZDNkZWJkMzYwZGI2IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.gM6MLtsb6fCbmq0MKoaVPgk349jiajRGknlxPJe2zBD4Tf6u5IDCyGg0KI7IXWX-RjHLfWT7gzFxS4-gM_YqHA",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/rest/v1/accounts",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "accounts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Client_Access-Only-Their-Accounts",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImY4MmUwYzcxLWQwMGEtNDlmOC04MTQ0LWM3YmM4OGI5YjYzNSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3R6b2lwbnVodXJycnF3Z2hqcHVzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5ZTUyNjYzZS1lODU5LTQ4MTAtOTRjZS0yMzY4MGU3MjEyMGYiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MDAxNzcwLCJpYXQiOjE3Njg5OTgxNzAsImVtYWlsIjoiYWRtaW5AZGlnaXRhbGJhbmsuZnIiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2ODk5ODE3MH1dLCJzZXNzaW9uX2lkIjoiZGQ5MGNjODQtNWZlOC00NWZjLTgxZTEtZDNkZWJkMzYwZGI2IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.gM6MLtsb6fCbmq0MKoaVPgk349jiajRGknlxPJe2zBD4Tf6u5IDCyGg0KI7IXWX-RjHLfWT7gzFxS4-gM_YqHA",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/rest/v1/accounts",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "accounts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Client2_Access-Only-Their-Accounts",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImY4MmUwYzcxLWQwMGEtNDlmOC04MTQ0LWM3YmM4OGI5YjYzNSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3R6b2lwbnVodXJycnF3Z2hqcHVzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5ZTUyNjYzZS1lODU5LTQ4MTAtOTRjZS0yMzY4MGU3MjEyMGYiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MDAxNzcwLCJpYXQiOjE3Njg5OTgxNzAsImVtYWlsIjoiYWRtaW5AZGlnaXRhbGJhbmsuZnIiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2ODk5ODE3MH1dLCJzZXNzaW9uX2lkIjoiZGQ5MGNjODQtNWZlOC00NWZjLTgxZTEtZDNkZWJkMzYwZGI2IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.gM6MLtsb6fCbmq0MKoaVPgk349jiajRGknlxPJe2zBD4Tf6u5IDCyGg0KI7IXWX-RjHLfWT7gzFxS4-gM_YqHA",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/rest/v1/accounts",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "accounts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Client_Access-Only-Their-Transactions",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImY4MmUwYzcxLWQwMGEtNDlmOC04MTQ0LWM3YmM4OGI5YjYzNSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3R6b2lwbnVodXJycnF3Z2hqcHVzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJiZTQ1MGQwYS05ZDFjLTQyODMtOWI1OS0wMjk2OGRhMWRkYzAiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MDAzNzI0LCJpYXQiOjE3NjkwMDAxMjQsImVtYWlsIjoiamVhbi5kdXBvbnRAZW1haWwuZnIiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2OTAwMDEyNH1dLCJzZXNzaW9uX2lkIjoiN2U0NjJiNjMtNzAyNS00OTI1LTk5ZjYtMTRhZGRjMWI0ZjRmIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.id52_VFrBAV17FwdctF5TXsW30TSPNATjkqGqdxurk2j28XsFFFRDs2OugNlbpKaudLN8IHkbUMFwypYtyFq_w",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/rest/v1/transactions",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "transactions"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Client2_Access-Only-Their-Transactions",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImY4MmUwYzcxLWQwMGEtNDlmOC04MTQ0LWM3YmM4OGI5YjYzNSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3R6b2lwbnVodXJycnF3Z2hqcHVzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJiZTQ1MGQwYS05ZDFjLTQyODMtOWI1OS0wMjk2OGRhMWRkYzAiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MDAzNzI0LCJpYXQiOjE3NjkwMDAxMjQsImVtYWlsIjoiamVhbi5kdXBvbnRAZW1haWwuZnIiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2OTAwMDEyNH1dLCJzZXNzaW9uX2lkIjoiN2U0NjJiNjMtNzAyNS00OTI1LTk5ZjYtMTRhZGRjMWI0ZjRmIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.id52_VFrBAV17FwdctF5TXsW30TSPNATjkqGqdxurk2j28XsFFFRDs2OugNlbpKaudLN8IHkbUMFwypYtyFq_w",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/rest/v1/transactions",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "transactions"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Analyst_Access-All-Accounts",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImY4MmUwYzcxLWQwMGEtNDlmOC04MTQ0LWM3YmM4OGI5YjYzNSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3R6b2lwbnVodXJycnF3Z2hqcHVzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5ZTUyNjYzZS1lODU5LTQ4MTAtOTRjZS0yMzY4MGU3MjEyMGYiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MDAxNzcwLCJpYXQiOjE3Njg5OTgxNzAsImVtYWlsIjoiYWRtaW5AZGlnaXRhbGJhbmsuZnIiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2ODk5ODE3MH1dLCJzZXNzaW9uX2lkIjoiZGQ5MGNjODQtNWZlOC00NWZjLTgxZTEtZDNkZWJkMzYwZGI2IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.gM6MLtsb6fCbmq0MKoaVPgk349jiajRGknlxPJe2zBD4Tf6u5IDCyGg0KI7IXWX-RjHLfWT7gzFxS4-gM_YqHA",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/rest/v1/accounts",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "accounts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Analyst_Access-All-Transactions",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImY4MmUwYzcxLWQwMGEtNDlmOC04MTQ0LWM3YmM4OGI5YjYzNSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3R6b2lwbnVodXJycnF3Z2hqcHVzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5ZTUyNjYzZS1lODU5LTQ4MTAtOTRjZS0yMzY4MGU3MjEyMGYiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MDAxNzcwLCJpYXQiOjE3Njg5OTgxNzAsImVtYWlsIjoiYWRtaW5AZGlnaXRhbGJhbmsuZnIiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2ODk5ODE3MH1dLCJzZXNzaW9uX2lkIjoiZGQ5MGNjODQtNWZlOC00NWZjLTgxZTEtZDNkZWJkMzYwZGI2IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.gM6MLtsb6fCbmq0MKoaVPgk349jiajRGknlxPJe2zBD4Tf6u5IDCyGg0KI7IXWX-RjHLfWT7gzFxS4-gM_YqHA",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/rest/v1/accounts",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "accounts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Analyst_ Filtrer les fraudes",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6b2lwbnVodXJycnF3Z2hqcHVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5NjY3MTYsImV4cCI6MjA4NDU0MjcxNn0.dAiyfPJ-aq-txkRr8T8d9HA80_KDCEAiBEkxW34q1MM",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImY4MmUwYzcxLWQwMGEtNDlmOC04MTQ0LWM3YmM4OGI5YjYzNSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3R6b2lwbnVodXJycnF3Z2hqcHVzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5ZTUyNjYzZS1lODU5LTQ4MTAtOTRjZS0yMzY4MGU3MjEyMGYiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MDAxNzcwLCJpYXQiOjE3Njg5OTgxNzAsImVtYWlsIjoiYWRtaW5AZGlnaXRhbGJhbmsuZnIiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2ODk5ODE3MH1dLCJzZXNzaW9uX2lkIjoiZGQ5MGNjODQtNWZlOC00NWZjLTgxZTEtZDNkZWJkMzYwZGI2IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.gM6MLtsb6fCbmq0MKoaVPgk349jiajRGknlxPJe2zBD4Tf6u5IDCyGg0KI7IXWX-RjHLfWT7gzFxS4-gM_YqHA",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://tzoipnuhurrrqwghjpus.supabase.co/rest/v1/accounts",
+          "protocol": "https",
+          "host": [
+            "tzoipnuhurrrqwghjpus",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "accounts"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
